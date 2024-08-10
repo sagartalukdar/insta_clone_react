@@ -1,0 +1,25 @@
+.dropDown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropDown:hover .dot{
+ background-color: rgb(231, 216, 216);
+}
+
+.dot{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropDownContent{
+    position: absolute;
+    z-index: 1;
+}
+
+.commentInput{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: .5rem .7rem;
+}

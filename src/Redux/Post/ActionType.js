@@ -1,0 +1,9 @@
+
+export const CREATE_NEW_POST="CREATE_NEW_POST";
+export const GET_USERS_POSTS="GET_USERS_POSTS";
+export const FIND_ALL_POSTS_BY_USERID="FIND_ALL_POSTS_BY_USERID";
+export const LIKE_POST="LIKE_POST";
+export const UNLIKE_POST="UNLIKE_POST";
+export const SAVE_POST="SAVE_POST";
+export const UNSAVE_POST="UNSAVE_POST";
+export const FIND_POST_bY_POSTID="FIND_POST_bY_POSTID";

@@ -1,0 +1,14 @@
+.comment{
+    max-height: 40%;
+    overflow-y: scroll;
+}
+
+.comment::-webkit-scrollbar{
+    display: none;
+}
+
+.commentInput{
+    width: 100%;
+    outline: none;
+    border: none;
+}

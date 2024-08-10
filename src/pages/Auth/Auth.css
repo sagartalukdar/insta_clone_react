@@ -1,0 +1,25 @@
+.mobile-wallpaper{
+    background-image: url('https://www.instagram.com/images/instagram/xig/homepage/screenshots/screenshot3-2x.png?__d=www');
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    animation: change-bg 8s infinite;
+}
+
+@keyframes change-bg {
+    0%{
+        background-image: url('https://images.pexels.com/photos/15226554/pexels-photo-15226554/free-photo-of-instagram-on-smartphone.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    }
+    25%{
+        background-image: url('https://images.pexels.com/photos/20193043/pexels-photo-20193043/free-photo-of-hand-holding-smartphone-with-pictures-gallery.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    }
+    50%{
+        background-image: url('https://images.pexels.com/photos/17500376/pexels-photo-17500376/free-photo-of-instagram-gallery-on-smartphone-touchscreen.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    }
+    75%{
+        background-image: url('https://images.pexels.com/photos/9584336/pexels-photo-9584336.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    }
+    100%{
+        background-image: url('https://images.pexels.com/photos/15226554/pexels-photo-15226554/free-photo-of-instagram-on-smartphone.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    }
+}

@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* custom css */
+.scroll-hide::-webkit-scrollbar{
+  display: none;
+}

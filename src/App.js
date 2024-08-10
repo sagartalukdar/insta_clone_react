@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useDispatch, useSelector } from "react-redux";
+import Router from "./pages/Router/Router";
+import { useEffect } from "react";
+import { getUserByJwt } from "./Redux/User/Action";
+
 
 function App() {
+  const token=localStorage.getItem("token");
+  const dispatch=useDispatch();
+  const {post}=useSelector(selector=>selector);
+
+  useEffect(()=>{
+   if(token){
+    dispatch(getUserByJwt(token));
+   }
+  },[token,post.savePost,post.unsavePost])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router/>
     </div>
   );
 }

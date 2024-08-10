@@ -1,0 +1,6 @@
+
+export const REQ_USER="REQ_USER";
+export const UPDATE_USER="UPDATE_USER";
+export const FIND_USER_BY_USERNAME="FIND_USER_BY_USERNAME";
+export const SEARCH_USER="SEARCH_USER";
+export const SEARCH_USER_ERROR="SEARCH_USER_ERROR";
