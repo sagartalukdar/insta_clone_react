@@ -3,7 +3,7 @@ import { SIGN_IN, SIGN_UP } from "./ActionType";
 
 export const signUpAction=(data)=>async(dispatcher)=>{
     try {
-        const res=await fetch('http://localhost:8080/signUp',{
+        const res=await fetch('http://insta-clone-springboot-production.up.railway.app/signUp',{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
