@@ -10,14 +10,14 @@ import Story from '../Story/Story';
 const Router = () => {
     const location=useLocation(); 
     const navigate=useNavigate();
+    const token=localStorage.getItem('token');
 
-    useEffect(()=>{
-      const token=localStorage.getItem('token');
+    useEffect(()=>{      
       if(!token){
         navigate('/login');
       }
-    },[]);
-    
+    },[!token]);
+
   return (
     <div>
 
