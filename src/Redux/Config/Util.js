@@ -1,2 +1,2 @@
 
-export const BASE_URL="http://insta-clone-springboot-production.up.railway.app"
+export const BASE_URL="insta-clone-springboot-production.up.railway.app"

@@ -1,9 +1,10 @@
+import { BASE_URL } from "../Config/Util";
 import { SIGN_IN, SIGN_UP } from "./ActionType";
 
 
 export const signUpAction=(data)=>async(dispatcher)=>{
     try {
-        const res=await fetch('http://insta-clone-springboot-production.up.railway.app/signUp',{
+        const res=await fetch(`${BASE_URL}/signUp`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -20,7 +21,7 @@ export const signUpAction=(data)=>async(dispatcher)=>{
 
 export const signInAction=(data)=>async(dispatcher)=>{
     try {
-        const res=await fetch('http://localhost:8080/signIn',{
+        const res=await fetch(`${BASE_URL}/signIn`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",
